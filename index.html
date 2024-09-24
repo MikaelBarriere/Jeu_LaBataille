@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>La Bataille</title>
+
+    </style>
+</head>
+<body>
+    <h1 class="text-center text-success fw-bold">Jeu de la Bataille</h1>
+    <main class="bg-success text-light w-75 m-auto">
+        <div id="ordinateurboard" class="gap-5 d-flex justify-content-start p-2 inline-block">
+            <div class="border border-light" id="ordinateurdos"><img class="taillecarte" src="img/backcartebleuegrande.png"></div>
+            <div class="border border-light" id="ordinateurcarte"><img class="taillecarte" src="img/backcartebleuegrande.png"></div>
+            <div class="" id="scoreordinateur">
+                <ul>
+                    <li id="computerVictory"class="list-group-item fw-bold py-3">Ordinateur<img src=""></li>
+                    <li class="list-group-item opacity">Score : <span id="scorevaleurordinateur">0</span></li>
+                    <li class="list-group-item opacity">Nombre de Cartes : <span id="nombrecarteordinateur">0</span></li>
+                    <li class="list-group-item  d-flex inline-block" id="computerBataille"></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div id="joueurboard" class="gap-5 d-flex justify-content-start p-2 inline-block">
+            <div class="border border-light" id="joueurdos"><img class="taillecarte" src="img/backcartegrande.png"></div>
+            <div class="border border-light" id="joueurcarte"><img class="taillecarte" src="img/backcartegrande.png"></div>
+            <div class="" id="scorejoueur">
+                <ul>
+                    <li id="playerVictory" class="list-group-item fw-bold  py-3">Joueur <img src="" ></li>
+                    <li class="list-group-item opacity">Score : <span id="scorevaleurjoueur">0</span></li>
+                    <li class="list-group-item opacity">Nombre de Cartes : <span id="nombrecartejoueur">0</span></li>
+                    <li class="list-group-item  d-flex inline-block" id="playerBataille"></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
